@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Getting started example",
-  "description": "This extension allows the user to change the background color of the current page.",
+  "name": "d2d",
+  "description": "This extension allows the user to download their files into their Google Drive.",
   "version": "1.0",
 
   "browser_action": {
@@ -10,8 +10,6 @@
     "default_popup": "popup.html",
     "default_title": "Click here!"
   },
-  "permissions": [
-    "activeTab",
-    "storage"
-  ]
+  "background": {"persistent": false, "scripts": ["background.js"]},
+  "permissions": ["activeTab", "downloads", "storage"]
 }
