@@ -1,4 +1,4 @@
-<!-- <!doctype html>
+<!doctype html>
 <html>
   <head>
     <title>Getting Started Extension's Popup</title>
@@ -27,9 +27,9 @@
     <p id="path"></p>
   </body>
 </html>
--->
 
-<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <title>Drive API Quickstart</title>
@@ -39,12 +39,19 @@
   <body>
     <p>Drive API Quickstart</p>
 
-    <!--Add buttons to initiate auth sequence and sign out-->
+    <!--Add buttons to initiate auth sequence and sign out
     <button id="authorize-button" style="display: block;">Authorize</button>
     <button id="signout-button" style="display: block;">Sign Out</button>
 
     <pre id="content"></pre>
-    <!--
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <div class="g-savetodrive"
+     data-src="//example.com/path/to/myfile.pdf"
+     data-filename="My Statement.pdf"
+     data-sitename="My Company Name">
+    </div>
+    
     <script type="text/javascript">
       // Client ID and API key from the Developer Console
       var CLIENT_ID = '377109162502-9shjti4aeq4vhbup4uabn307dii0m25p.apps.googleusercontent.com';
@@ -156,6 +163,5 @@
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
-  -->
   </body>
-</html>
+</html> -->
